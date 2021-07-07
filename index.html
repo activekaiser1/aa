@@ -1,5 +1,5 @@
 
-<canvas class="canvas" width="2000" height="2000" style="border:1px solid"></canvas>
+<canvas class="canvas" width="1000" height="1000" style="border:1px solid"></canvas>
 <script>
 
 const sensor = new AbsoluteOrientationSensor({frequency: 60});
@@ -25,11 +25,11 @@ function handleSensor(e){
     let ctx = canvas.getContext("2d");
 
 
-ctx.clearRect(0, 0, 2000, 2000);
+ctx.clearRect(0, 0, 1000, 1000);
         let x = dist[0] + window.innerWidth/2;
         let y = dist[1] + window.innerHeight/2;
         ctx.beginPath();
-        ctx.fillRect(x, y, 10, 10);
+        ctx.fillRect(x, y, 50, 50);
         ctx.fillStyle = "red";
         ctx.fill();
         ctx.closePath();
