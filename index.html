@@ -9,7 +9,7 @@ sensor.start();
 
 let initPos;
 let calibrate = true;
-
+document.body.addEventListener("click", () => {calibrate = true})
 function handleSensor(e){
       let quaternion = e.target.quaternion;
       let angles = toEuler(quaternion);
